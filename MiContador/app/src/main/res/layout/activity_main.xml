@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.alos1.micontador.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvCamba"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textSize="150dp" />
+
+    <Button
+        android:id="@+id/btnAumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvCamba"
+        android:layout_below="@+id/tvCamba"
+        android:layout_marginTop="26dp"
+        android:onClick="incrementarCont"
+        android:text="@string/lblbtnContador" />
+
+    <Button
+        android:id="@+id/btnDecremento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvCamba"
+        android:layout_below="@+id/btnAumento"
+        android:layout_marginTop="15dp"
+        android:onClick="decrementarCont"
+        android:text="@string/lblbtnDecremento" />
+
+    <Button
+        android:id="@+id/btnRestablecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvCamba"
+        android:layout_below="@+id/btnDecremento"
+        android:layout_marginTop="20dp"
+        android:onClick="restablcerCont"
+        android:text="@string/lblbtnReset" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnAumento"
+        android:layout_marginStart="27dp"
+        android:text="No acepta negativos" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/btnAumento"
+        android:ems="10"
+        android:inputType="numberDecimal"/>
+
+
+</RelativeLayout>
